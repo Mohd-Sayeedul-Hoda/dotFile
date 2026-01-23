@@ -127,12 +127,10 @@ alias chy="$HOME/.myScript/hyprConfigChange.py"
 alias shh="history | fzy | sed 's/[0-9]\+ //g'"
 alias awt="$HOME/.myScript/awt.sh"
 alias swt="source $HOME/.myScript/swt.sh"
-# Worktree manager aliases
-alias wtm="$HOME/.dotfiles/myscript/.myScript/worktree_manager.sh"
-alias wtmc="$HOME/.dotfiles/myscript/.myScript/worktree_manager.sh create"
-alias wtms="$HOME/.dotfiles/myscript/.myScript/worktree_manager.sh switch"
-alias wtmr="$HOME/.dotfiles/myscript/.myScript/worktree_manager.sh remove"
-alias wtml="$HOME/.dotfiles/myscript/.myScript/worktree_manager.sh list"
+alias wab="$HOME/.myScript/createWorktree.sh"
+alias wrb="$HOME/.myScript/removeWorktree.sh"
+alias todo="$HOME/.dotfiles/myscript/.myScript/open_daily_todo.sh"
+alias notes="$HOME/.dotfiles/myscript/.myScript/open_daily_notes.sh"
 
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export PATH=$PATH:/usr/local/go/bin
@@ -155,8 +153,6 @@ if [ -f '/home/aman/.local/bin/google-cloud-sdk/path.zsh.inc' ]; then . '/home/a
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
-
-
 # opencode
 export PATH=/home/aman/.opencode/bin:$PATH
 
@@ -166,3 +162,11 @@ export PATH=/home/aman/.opencode/bin:$PATH
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+# Generated for envman. Do not edit.
+# [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
+
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+

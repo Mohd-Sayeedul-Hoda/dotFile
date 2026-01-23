@@ -23,6 +23,14 @@ M.setup = function()
 	vim.api.nvim_set_keymap("i", "<C-S-Tab>", "<C-o>:tabprevious<CR>", { noremap = true, silent = true }) -- Insert mode
 
 	vim.api.nvim_set_keymap("n", "<leader>jq", ":%! jq '.'<CR>", { noremap = true })
+	vim.api.nvim_set_keymap("n", "<leader>zm", ":ZenMode<CR>", { noremap = true })
+	vim.api.nvim_set_keymap(
+		"n",
+		"<leader>sc",
+		":TodoTelescope<CR>",
+		{ noremap = true, silent = true, desc = "[S]earch [C]omment" }
+	)
+	vim.api.nvim_set_keymap("n", "<leader>sv", ":source $MYVIMRC<CR>", { noremap = true, desc = "resource nvim file" })
 
 	print("Custom tab key mappings loaded.") -- Confirmation message
 end

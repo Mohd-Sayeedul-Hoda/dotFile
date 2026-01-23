@@ -17,6 +17,7 @@
     "backlight",
     "wireplumber",
     "battery",
-    "custom/uptime"
+    "custom/uptime",
+    "custom/power"
   ]
 }

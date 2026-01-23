@@ -27,3 +27,5 @@ google-chrome-unstable
 .gemini
 .azure
 .cursor
+.worktree
+.govm

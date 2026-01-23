@@ -986,13 +986,6 @@ else
 	vim.cmd.colorscheme("catppuccin")
 
 	require("custom.setup.luasnip")
-
-	vim.api.nvim_set_keymap(
-		"n",
-		"<leader>sc",
-		":TodoTelescope<CR>",
-		{ noremap = true, silent = true, desc = "[S]earch [C]omment" }
-	)
 end
 
 -- open pdf file from nvim to okular directly
